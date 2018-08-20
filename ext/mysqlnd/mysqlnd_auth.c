@@ -1096,7 +1096,7 @@ mysqlnd_caching_sha2_handle_server_response(struct st_mysqlnd_authentication_plu
 			// The server tried to send a key, which we didn't expect
 			// fall-through
 		default:
-			php_error_docref(NULL, E_WARNING, "Unexpected server respose while doing caching_sha2 auth: %i", result_packet->response_code);
+			php_error_docref(NULL, E_WARNING, "Unexpected server response while doing caching_sha2 auth: %i", result_packet->response_code);
 	}
 
 	PACKET_FREE(result_packet);
